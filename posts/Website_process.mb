@@ -1,0 +1,54 @@
+---
+title: Detailing the Process of Creating This Site (Ongoing)
+date: today
+category: personal
+excerpt: Everything going through my mind as I make this site.
+---
+
+# The What & The Why
+I am making this website as a fast way to brush dust off my coding skills for my next trimester since I did not have any coding classes in this one.
+As I approach the end of the term, I realise that I have not coded over the holidays either (too preoccupied with my side hustle). 
+I decided that the best way to get back into things would be to just create something. Something simple, fast and deliverable. With that criteria, a personal website just made the most sense to me.
+
+So what is this? This will be a site for me to showcase anything and everything. My personal thoughts, projects and more. My priorities are on keeping things clean, fast and easy to navigate.
+
+# What Now?
+This blog in specific will detail the process of engineering this site. Previously, I would not have detailed this, but I've come to realise that sometimes, when it comes to career aspects,
+they don't just want to see what you have. They want to know how you made it, what processes you went through, what hardships you overcame, and how. Unrelated thought: This is reminiscent to how I remember 
+Jensen Huang talking about how the best skill to have is grit. IDK.
+
+# 14 April 26
+## Side track
+Today I started everything, FULL Disclosure, I do use AI to assist in making this site. Previously I did not use AI at all, and honestly thought it would just degrade my code quality, but after
+seeing things online about AI workflows, cybersecurity and more, I started thinking I might need to learn how to effectively use AI. The tipping point came to me when I found out actual corporate jobs mandate its use.
+I learned that TikTok interns are just now required to use AI for at least 20% of their code, and at CommBank interns use Agentic AI for most of their workflow. It was after hearing this that I realised, if I don't start now,
+I will genuinely not know how to properly use AI should I need. By this I mean, not just typing a simple prompt into GPT, but actually getting quality information or work out of it. Making automated systems like OpenClaw and such is 
+now something I want to learn to enhance my own productivity. So, while making and updating this site, I am trying to properly learn how to use AI properly and not just make it give out sh*tty code. And make this website as fast as possible.
+
+## Back to Progress
+what I've done:
+- bulk of the basics down, design is done and site is up and working
+- done resume page (file is missing currenlty because I don't want my data stolen)
+- made blogs page dynamic so all I do is add my blog .md file in a folder and it should work fine
+- put some example blogs in
+I've gotten most of the Next.js components working, as well as the basic template files and hosting on Vercel. 
+Simple problems and how I solved them:
+- file not being found -> checked npm modules, and file path, refactored filepath to a const so that I can change the resume easily in the future. Checked multiple previews and the vscode one was bugged.
+- blogs page not knowing how to work it out -> found out I had to add extra components in the [slug] and created a posts folder.
+    - this version was reliant on me manually editing everything -> wanted it to be dynamic so changed it so that every future md file just needs some frontmatter and then can be dropped in the folder easily.
+    - realised that putting blog sections on top of each other meant that you can't see the bottom categories -> created categories to sort the blogs and made a Buttons
+    - -> same as above but for time and date.
+
+
+# What To do
+I want to add some blogs:
+- How English is an underlooked subject at Sch | the importance of communication (personal)
+    - using how Claude and Cluely are both hiring communication experts that can speak technically but engagingly
+- Fragrance blogs and why its a good time to get into them now (L'Oreal brandstorm) (personal)
+- some uni course and non-course related guides (uni)
+- some career tips for new uni students (career)
+
+Add some projects:
+- fragrance recommender (with a technical spin)
+- one technical depth project
+- one trading project
