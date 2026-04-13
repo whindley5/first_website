@@ -1,19 +1,24 @@
+export const metadata = {
+  robots: { index: false, follow: false }
+};
+
 export default function ResumePage() {
+  // Define variables outside the return block
+  const resumePath = "/WilliamHindley_Work_CV.pdf";
+
   return (
     <div className="container">
-      {/* 1. Header section removed */}
-
       {/* Download buttons */}
       <div style={{ display: 'flex', gap: '12px', marginBottom: '40px', marginTop: '20px' }}>
         <a
-          href="/William_Hindley_Work_CV.pdf"
+          href={resumePath}
           download
           className="btn btn-primary"
         >
           ↓ Download PDF
         </a>
         <a
-          href="/William_Hindley_Work_CV.pdf"
+          href={resumePath}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline"
@@ -33,8 +38,8 @@ export default function ResumePage() {
         }}
       >
         <iframe
-          /* 2. Path updated to point to the root public directory */
-          src="/public/William_Hindley_Work_CV.pdf#toolbar=0"
+          // Using a template literal for cleaner string joining
+          src={`${resumePath}#view=FitH&toolbar=0`}
           width="100%"
           height="900"
           style={{ display: 'block', border: 'none' }}
@@ -42,5 +47,5 @@ export default function ResumePage() {
         />
       </div>
     </div>
-  )
+  );
 }

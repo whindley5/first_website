@@ -1,0 +1,11 @@
+export default function robots() {
+  return {
+    rules: {
+      userAgent: '*',
+      disallow: [
+        '/WilliamHindley_Work_CV.pdf', 
+        '/resume/'
+      ],
+    },
+  }
+}

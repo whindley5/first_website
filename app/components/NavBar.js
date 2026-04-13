@@ -17,7 +17,7 @@ export default function NavBar() {
     <nav>
       <div className="nav-inner">
         <Link href="/" className="nav-logo">
-          your.name  {/* ← change this */}
+          will. Hi  {/* ← change this */}
         </Link>
         <div className="nav-links">
           {links.map(({ href, label }) => (
